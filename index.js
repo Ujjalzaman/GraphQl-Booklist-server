@@ -143,6 +143,6 @@ app.use('/graphql', graphqlHTTP({
 }))
 
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log('server is running')
 })
